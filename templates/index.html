@@ -3,13 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Converter</title>
+    <title>YouTube to MP3 Downloader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #333333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin: 20px auto;
+            border: 2px solid #009578;
+            padding: 10px;
+            width: calc(100% - 24px);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        input[type="file"]:hover {
+            border-color: #007e63;
+        }
+
+        input[type="submit"] {
+            background-color: #009578;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #007e63;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777777;
+        }
+
+        footer a {
+            color: #009578;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Upload your file to download YouTube videos as MP3</h1>
-    <form method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".txt">
-        <input type="submit" value="Download MP3s">
-    </form>
+    <div class="container">
+        <h1>YouTube to MP3 Downloader</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".txt">
+            <input type="submit" value="Download MP3s">
+        </form>
+        <footer>
+            <p>Created with ❤️ by <a href="#">Your Name</a></p>
+        </footer>
+    </div>
 </body>
 </html>
